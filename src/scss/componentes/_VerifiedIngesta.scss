@@ -1,0 +1,325 @@
+.VerifiedIngesta {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  column-gap: 1em;
+
+  &Entry {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto auto auto 1fr auto;
+    column-gap: 8px;
+    row-gap: 8px;
+
+    &Buttons {
+      align-items: flex-end;
+      row-gap: 0.5em;
+      margin: 1em 0;
+    }
+
+    &TextArea textarea {
+      width: 100%;
+      resize: none;
+      border: 0;
+      outline: none;
+      background-color: #f0f0f0;
+      padding: 1em;
+      height: 80%;
+
+      body.dark & {
+        background-color: #2b3149;
+        color: white;
+      }
+    }
+
+    &Divisor {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      column-gap: 1em;
+    }
+
+    &Button__btnSearch {
+      @extend %button;
+      background-color: #028484;
+      color: #fff;
+      border-radius: 4px;
+      width: 100%;
+
+      &:hover {
+        background-color: $color-terciario-alt;
+      }
+    }
+
+    &Button__btnClear {
+      @extend %button;
+      background-color: #c3414c;
+      color: #fff;
+      font-size: 14px;
+      border-radius: 4px;
+      width: 100%;
+
+      &:hover {
+        background-color: #d44b57;
+      }
+    }
+  }
+
+  &Output {
+    width: 100%;
+    height: 100%;
+    height: calc(100vh - 100px);
+    overflow: auto;
+    background: #f3f3f3;
+
+    body.dark & {
+      background-color: #2b3149;
+      color: white;
+    }
+
+    &__txtPre {
+      padding: 1em;
+      margin: 0;
+      border-radius: 8px;
+      font-size: 12px;
+    }
+  }
+}
+
+.InputFile {
+  margin: 1em 0;
+}
+
+.wrapperGetValues {
+  display: grid;
+  grid-template-columns: repeat(2, 700px);
+  grid-column-gap: 4em;
+  justify-content: center;
+  margin-top: 2em;
+}
+
+.uploadFile {
+  &__input {
+    margin-bottom: 1em;
+  }
+
+  &__txtArea {
+    width: 100%;
+    height: 500px;
+    resize: none;
+    border: 0;
+    padding: 1em;
+    background-color: #f2f2f2;
+  }
+
+  &__input {
+    display: none;
+  }
+}
+
+.InputFile {
+  &__head {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  &__title {
+    margin-bottom: 0.5em;
+    font-size: 14px;
+    display: inline-block;
+
+    body.dark & {
+      color: white;
+    }
+  }
+
+  &__filter {
+    background-color: #5b6eb2;
+    border-radius: 4px;
+    color: #fff;
+    font-size: 12px;
+    padding: 0.5em 1em;
+    cursor: pointer;
+
+    & .icon-file {
+      padding-right: 0.5em;
+    }
+  }
+
+  &__input {
+    background-color: #f0f0f0;
+    border: 0;
+    outline: 0;
+    color: #484848;
+    padding: 0 1em;
+    line-height: 3;
+    border-radius: 4px;
+    display: block;
+    width: 100%;
+
+    body.dark & {
+      background-color: #2b3149;
+      color: white;
+    }
+  }
+}
+
+.UploadFile__btn {
+  @extend %button;
+  background-color: #043264;
+  border-radius: 4px;
+  color: #fff;
+  font-size: 14px;
+
+  &:hover {
+    background-color: $color-secundario-alt;
+  }
+}
+
+.btnSuccess {
+  &:hover {
+    background-color: #51aced;
+  }
+}
+
+.myButtonEntryTwo {
+  &:hover {
+    background-color: $color-secundario-alt;
+  }
+}
+
+.buttonSecundary {
+  &:hover {
+    background-color: #4ba8eb;
+  }
+}
+
+.cleanButton {
+  background-color: $color-secundario;
+  color: #fff;
+  border: 0;
+  border-radius: 4px;
+  line-height: 3;
+  outline: none;
+  padding: 0;
+
+  &:hover {
+    background-color: $color-secundario-alt;
+  }
+}
+
+.msg-tooltip {
+  font-size: 12px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #aaaaaa;
+  margin: 1em 0;
+}
+
+.tooltip__info {
+  padding-right: 0.5em;
+}
+
+.verifiedGetValues {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  grid-column-gap: 2em;
+}
+
+.buttonUploadDesactive {
+  width: 100%;
+}
+
+.buttonDesactive {
+  @extend %desactive;
+
+  body.dark & {
+    background-color: #2b3149;
+  }
+}
+
+%desactive {
+  background-color: #f7f7f7;
+  color: #cacaca;
+  display: block;
+  padding: 10px 1.5em;
+  font-size: 14px;
+  border-radius: 4px;
+  border: 0;
+  outline: none;
+  text-align: center;
+  width: 100%;
+  cursor: default;
+}
+
+.filterSuccess {
+  border: 2px solid #67de67;
+  background-color: #e5ffe5;
+
+  body.dark & {
+    background-color: #317c31;
+    color: white;
+  }
+}
+
+.filterError {
+  border: 2px solid #ff6565;
+  background-color: #ffe0e0;
+
+  body.dark & {
+    background-color: #8d3c3c;
+    color: white;
+  }
+}
+
+.txtPreformat {
+  background-color: #f2f2f2;
+  height: calc(100vh - 215px);
+  margin: 0;
+  padding: 1em;
+  overflow: auto;
+}
+
+.txtAreaPaste {
+  resize: none;
+  background-color: #f2f2f2;
+  width: 100%;
+  padding: 1em;
+  border: 0;
+  outline: none;
+}
+
+.searchIngesta {
+  display: grid;
+  grid-template-columns: 1fr auto;
+  justify-content: flex-end;
+
+  &__input {
+    margin-right: 0.5em;
+    border-radius: 4px;
+    background-color: #f0f0f0;
+    line-height: 2;
+    outline: 0;
+    border: 0;
+    padding-left: 1em;
+
+    body.dark & {
+      background-color: #2b3149;
+      color: white;
+    }
+  }
+
+  &__btn {
+    background-color: $color-terciario;
+    color: white;
+    border: 0;
+    padding: 0.6em 2em;
+    border-radius: 4px;
+    cursor: pointer;
+    outline: none;
+
+    &:hover {
+      background-color: $color-terciario-alt;
+    }
+  }
+}

@@ -1,0 +1,39 @@
+.MenuUser {
+  &__photo {
+    border: 1.5px solid $color-secundario-alt;
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: inline-block;
+    position: absolute;
+    right: 50%;
+    left: calc(50% - 40px);
+    top: -45px;
+  }
+
+  &__name {
+    text-align: center;
+    font-weight: bold;
+    font-size: 14px;
+    padding-top: 50px;
+    color: #fff;
+  }
+
+  &ButtonLogin {
+    @extend %button;
+    font-size: 12px;
+    margin: 0.5em auto;
+    width: 60%;
+    background-color: #043264;
+    color: #fff;
+    border-bottom: 2px solid #1b67b9;
+    border-radius: 4px;
+
+    &:hover {
+      background-color: #0c4581;
+      border-bottom: 2px solid #185fac;
+    }
+  }
+}

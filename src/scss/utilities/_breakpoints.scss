@@ -1,0 +1,140 @@
+// RESPONSIVE
+
+@media (max-width: 1400px) {
+  .HomePage {
+    grid-template-columns: 1fr;
+
+    &Image {
+      order: 2;
+      text-align: center;
+
+      & img {
+        width: 80%;
+      }
+    }
+  }
+}
+
+@media (max-width: 1023px) {
+  .MenuToggle {
+    display: none;
+  }
+  .MainWrapper {
+    grid-template-columns: auto 1fr;
+  }
+  .Menu {
+    display: initial;
+  }
+  .HomePageContent__btn {
+    display: block;
+  }
+  .HomePage {
+    &Content {
+      &__title {
+        font-size: 80px;
+        line-height: 48px;
+
+        &__titleSecundary {
+          font-size: 40px;
+        }
+      }
+
+      &__btn {
+        font-size: 18px;
+        width: 90%;
+        margin: 1em auto;
+      }
+    }
+  }
+}
+
+@media (max-width: 767px) {
+  .LayoutContainer {
+    grid-template-columns: 1fr;
+  }
+  .MainWrapper {
+    grid-template-columns: 1fr;
+  }
+  .VerifiedIngesta {
+    grid-template-columns: 1fr;
+  }
+  .VerifiedIngestaEntryDivisor {
+    grid-template-columns: 1fr;
+  }
+  .MainContent__title {
+    text-align: right;
+  }
+  .MenuToggle {
+    display: flex;
+    top: 15px;
+  }
+  .Menu {
+    display: none;
+    overflow: hidden;
+  }
+  .showMenu {
+    display: block;
+    position: fixed;
+  }
+  .PageView h1 {
+    text-align: right;
+  }
+}
+
+@media (max-width: 480px) {
+  .NotFound img {
+    width: 80%;
+  }
+  .TableOptions {
+    grid-template-columns: 1fr;
+    row-gap: 12px;
+  }
+  .SearchForm {
+    order: 2;
+    grid-template-columns: auto 1fr;
+    align-items: center;
+    column-gap: 0.5em;
+  }
+  .btn-signIn,
+  .btn-signOut {
+    width: 100%;
+  }
+  .HomePageContent {
+    &__title {
+      font-size: 60px;
+    }
+    &__titleSecundary {
+      font-size: 16px;
+      margin-top: -12px;
+    }
+  }
+  .HomeCardFunctions {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 320px) {
+  .SearchForm__txt {
+    display: none;
+  }
+  .SearchFormInput {
+    margin-left: 0;
+  }
+  .searchIngesta {
+    grid-template-columns: 1fr;
+  }
+  .searchIngesta__input {
+    margin-right: 0;
+    margin-bottom: 8px;
+  }
+  .Flag {
+    &__country {
+      width: 35px;
+    }
+  }
+  .HomePageContent {
+    &__btn {
+      font-size: 12px;
+    }
+  }
+}

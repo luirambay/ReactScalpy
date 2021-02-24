@@ -1,0 +1,104 @@
+html {
+  height: 100vh;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: $font-textos;
+  height: 100%;
+  color: $color-texto;
+  background-color: #fff;
+
+  &.dark {
+    background: #070a17;
+  }
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+p {
+  margin: 0;
+}
+
+.iframes {
+  width: 100%;
+  height: calc(100vh - 36px);
+  border: 0;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: $font-encabezados;
+  margin: 0;
+}
+
+#app {
+  height: 100%;
+}
+
+.wrapperContent {
+  display: grid;
+  grid-template-columns: 1fr;
+  overflow-y: auto;
+}
+
+.btn-signIn {
+  background-color: $color-secundario;
+  color: white;
+  padding: 0.5em 4em;
+  border: 0;
+  border-radius: 4px;
+  outline: 0;
+  font-weight: bold;
+  width: 300px;
+  cursor: pointer;
+  justify-self: end;
+  border-bottom: 2px solid $color-secundario-alt;
+  order: 1;
+
+  &:hover {
+    background-color: #0c4480;
+    transition: 0.5 ease-in-out;
+  }
+}
+
+.btn-signOut {
+  background-color: $color-secundario;
+  color: #fff;
+  padding: 0.5em 4em;
+  border: 0;
+  cursor: pointer;
+  border-radius: 4px;
+  font-weight: bold;
+  outline: 0;
+  width: 100%;
+  justify-self: end;
+  border-bottom: 2px solid $color-secundario-alt;
+  order: 1;
+
+  &:hover {
+    background-color: #0c4480;
+    transition: 0.5 ease-in-out;
+  }
+}

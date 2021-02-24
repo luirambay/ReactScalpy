@@ -1,0 +1,68 @@
+.Documents {
+  &Contain {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    row-gap: 1em;
+    column-gap: 1em;
+  }
+
+  &List {
+    margin-bottom: 4em;
+
+    &__title {
+      font-size: 21px;
+      margin-bottom: 1em;
+
+      body.dark & {
+        color: white;
+      }
+    }
+  }
+}
+
+.Document {
+  box-shadow: 0 0.5rem 1rem -0.5rem #ccc;
+  height: 240px;
+  padding: 1em;
+  display: grid;
+  grid-template-rows: auto 1fr auto;
+  text-align: center;
+  border-radius: 12px;
+
+  body.dark & {
+    background: #14192b;
+    box-shadow: 5px 5px 6px #000000;
+    color: white;
+  }
+
+  &Header {
+    &__title {
+      font-size: 14px;
+    }
+
+    &__subtitle {
+      font-size: 12px;
+      color: #939393;
+      margin-top: 0.5em;
+      margin-bottom: 0;
+    }
+  }
+
+  &Body {
+    align-self: center;
+    justify-self: center;
+  }
+
+  &Footer__btn {
+    @extend %button;
+    background-color: #028484;
+    width: 100%;
+    border-radius: 4px;
+    color: #fff;
+    font-size: 14px;
+
+    &:hover {
+      background-color: #11a3a3;
+    }
+  }
+}

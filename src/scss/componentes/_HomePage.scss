@@ -1,0 +1,62 @@
+.HomePage {
+  height: 100vh;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr;
+  background: url("../public/assets/BackgroundHome.svg");
+  background-size: cover;
+  background-color: $color-secundario;
+  color: white;
+  padding: 1.5em;
+
+  &Content {
+    order: 2;
+    align-self: center;
+
+    &__flag {
+      text-align: center;
+      margin-bottom: 8px;
+
+      & img {
+        width: 40px;
+      }
+    }
+
+    &__title {
+      text-align: center;
+      font-size: 80px;
+      color: white;
+      line-height: 48px;
+
+      &Secundary {
+        font-size: 18px;
+        color: white;
+        display: block;
+      }
+    }
+
+    &__btn {
+      @extend %button;
+      background-color: #0a9b9b;
+      border-radius: 8px;
+      color: #fff;
+      width: 100%;
+      text-transform: uppercase;
+      font-size: 18px;
+      margin: 1em 0;
+      display: none;
+
+      &:hover {
+        background-color: #22baba;
+      }
+    }
+  }
+
+  &Image {
+    align-self: flex-end;
+
+    & img {
+      width: 100%;
+    }
+  }
+}

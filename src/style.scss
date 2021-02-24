@@ -1,0 +1,35 @@
+// Colores
+@import "./scss/utilities/_colores.scss";
+// Funtes
+@import "./scss/utilities/_fuentes.scss";
+// Mixins
+@import "./scss/utilities/_utilities.scss";
+// Estilos Base / Generales
+@import "./scss/utilities/_base.scss";
+// Plantilla
+@import "./scss/componentes/_Layout.scss";
+
+//HomePage
+@import "./scss/componentes/_HomePage.scss";
+
+// Paginas Principales
+@import "./scss/componentes/_Home.scss";
+@import "./scss/componentes/_VerifiedIngesta.scss";
+@import "./scss/componentes/_Graphics.scss";
+@import "./scss/componentes/_Document.scss";
+@import "./scss/componentes/_NotFound.scss";
+@import "./scss/componentes/_PageError.scss";
+
+// Componentes
+@import "./scss/componentes/_SearchForm.scss";
+@import "./scss/componentes/_SwitchMode.scss";
+@import "./scss/componentes/_Menu.scss";
+@import "./scss/componentes/_MenuToggle.scss";
+@import "./scss/componentes/_MenuUser.scss";
+@import "./scss/componentes/_MenuNav.scss";
+@import "./scss/componentes/_CardFunction.scss";
+@import "./scss/componentes/_Card.scss";
+@import "./scss/componentes/_TableData.scss";
+
+// Media Queries
+@import "./scss/utilities/_breakpoints.scss";

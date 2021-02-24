@@ -1,0 +1,43 @@
+.MenuNav {
+  display: grid;
+  grid-template-rows: repeat(2, auto);
+  row-gap: 1em;
+  padding: 0 16px;
+  margin-top: 2em;
+
+  &List {
+    &__title {
+      font-size: $fontSize-subtitulo;
+      font-weight: bold;
+      color: $color-terciario-alt;
+      margin-bottom: 1em;
+    }
+
+    &__item {
+      list-style: none;
+      margin: 0 12px 12px 12px;
+      align-items: center;
+    }
+    &__link {
+      text-decoration: none;
+      color: $color-texto-alt;
+      font-size: $fontSize-parrafo;
+      font-weight: normal;
+      display: grid;
+      grid-template-columns: auto auto 1fr;
+
+      &__icon {
+        padding-right: 18px;
+      }
+    }
+
+    &Active {
+      justify-self: flex-end;
+
+      &,
+      .active {
+        color: $color-principal;
+      }
+    }
+  }
+}

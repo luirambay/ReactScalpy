@@ -1,0 +1,58 @@
+// Switch
+
+.SwitchMode {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 1em;
+
+  &__buttonToggle {
+    background: #343d5b;
+    border-radius: 1000px;
+    border: none;
+    position: relative;
+    cursor: pointer;
+    display: flex;
+    outline: none;
+    margin: 0 auto;
+
+    &::after {
+      content: "";
+      display: block;
+      width: 30px;
+      height: 30px;
+      position: absolute;
+      background: #f1f1f1;
+      top: 0;
+      left: 0;
+      right: unset;
+      border-radius: 100px;
+      transition: 0.3s ease all;
+      box-shadow: 0 0 2px 2px rgba(0, 0, 0, 0.2);
+    }
+
+    &.active {
+      background: #05c77c;
+      color: #000;
+      &::after {
+        right: 0;
+        left: unset;
+      }
+    }
+  }
+
+  &__icon {
+    width: 30px;
+    height: 30px;
+    line-height: 30px;
+    display: block;
+    background: none;
+    color: #fff;
+  }
+
+  &__text {
+    margin-top: 1em;
+    color: #fff;
+  }
+}

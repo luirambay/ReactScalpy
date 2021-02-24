@@ -1,0 +1,76 @@
+.CardFunction {
+  display: grid;
+  grid-template-rows: auto 1fr auto;
+  row-gap: 0.5em;
+  align-items: center;
+  background-color: #fff;
+  padding: 1em;
+  box-shadow: 5px 5px 6px hsla(0, 0%, 80%, 0.4);
+  border-radius: 12px;
+
+  body.dark & {
+    background: #14192b;
+    box-shadow: 5px 5px 6px #000000;
+    color: white;
+  }
+
+  &Header {
+    &__title {
+      font-size: $fontSize-titulo;
+    }
+    &__subtitle {
+      font-size: $fontSize-parrafo;
+      color: $color-texto-light;
+      font-weight: 400;
+      font-style: italic;
+      margin-top: 0.5em;
+    }
+  }
+
+  &Image {
+    & img {
+      margin: 0 auto;
+      display: block;
+    }
+  }
+}
+
+.CardFunctionFooter {
+  &Play {
+    display: block;
+    &__icon {
+      font-size: 45px;
+      color: $color-oscuro;
+
+      body.dark & {
+        color: $color-terciario;
+      }
+    }
+  }
+
+  &Notification {
+    display: grid;
+    grid-template-columns: 167px auto;
+    grid-column-gap: 12px;
+    align-items: center;
+
+    &__txt {
+      text-align: right;
+      font-size: $fontSize-parrafo-alt;
+      color: $color-texto-light;
+    }
+
+    &__count {
+      background-color: $color-secundario-alt;
+      align-items: center;
+      width: 30px;
+      height: 30px;
+      display: flex;
+      border-radius: 50%;
+      justify-content: center;
+      color: $color-texto-alt;
+      font-size: $fontSize-parrafo-alt;
+      font-weight: normal;
+    }
+  }
+}

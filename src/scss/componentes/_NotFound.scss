@@ -1,0 +1,10 @@
+.NotFound {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: inherit;
+
+  & img {
+    max-width: 450px;
+  }
+}
