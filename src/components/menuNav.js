@@ -17,6 +17,7 @@ const MenuNav = () => {
     "angel.soto.requena.contractor@bbva.com",
     "jorge.arevalo.arica.contractor@bbva.com",
     "ray.lescano.contractor@bbva.com",
+    "marcos.mera.contractor@bbva.com"
   ];
 
   const isCorreo = () => {
