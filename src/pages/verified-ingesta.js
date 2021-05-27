@@ -44,7 +44,6 @@ const VerifiedIngesta = () => {
     const value = ev.target.value;
     const newFileLoad = value.replace(/[*?$]/g, " $&");
     const txtAreaConvertJson = parseHocon(newFileLoad);
-    console.log(txtAreaConvertJson);
 
     setDataJson(txtAreaConvertJson);
     setDataJsonText(value);
@@ -206,31 +205,6 @@ const VerifiedIngesta = () => {
       });
 
       dataJson.kirby.transformations.map((elements) => {
-        if (Object.keys(elements).length === 4) {
-          Object.getOwnPropertyNames(elements).map((el) => {
-            switch (el) {
-              case "default":
-                printElement("${?DATE}");
-                filterNoAccept(" ${?REPROCESS_DATE}");
-                break;
-              case "defaultType":
-                printElement("string");
-                break;
-              case "type":
-                printElement("literal");
-                break;
-              case "field":
-                printElement(`field="cutoff_date"`);
-                printElement(`field = "cutoff_date"`);
-                break;
-              default:
-                break;
-            }
-          });
-        }
-      });
-
-      dataJson.kirby.transformations.map((elements) => {
         if (Object.keys(elements).length === 3) {
           Object.getOwnPropertyNames(elements).map((el) => {
             switch (el) {
@@ -250,13 +224,36 @@ const VerifiedIngesta = () => {
                 }
                 break;
               case "typeToCast":
-                if (elements[el] === "long") {
-                  printElement(`long`);
+                if (elements[el] === "string") {
+                  printElement(`typeToCast = "string"`);
                 } else {
                   filterNoAccept(`${elements[el]}`);
                 }
                 break;
               default:
+                break;
+            }
+          });
+        }
+      });
+
+      dataJson.kirby.transformations.map((elements) => {
+        if (Object.keys(elements).length === 4) {
+          Object.getOwnPropertyNames(elements).map((el) => {
+            switch (el) {
+              case "default":
+                printElement("${?DATE}");
+                filterNoAccept(" ${?REPROCESS_DATE}");
+                break;
+              case "defaultType":
+                printElement("string");
+                break;
+              case "type":
+                printElement("literal");
+                break;
+              case "field":
+                printElement(`field="cutoff_date"`);
+                printElement(`field = "cutoff_date"`);
                 break;
             }
           });

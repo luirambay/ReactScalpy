@@ -34,7 +34,7 @@ const Documents = () => {
         </section>
 
         <section className="DocumentsList">
-          <h2 className="DocumentsList__title">Frente Revisión de PRS</h2>
+          <h2 className="DocumentsList__title">Revisión de PRS</h2>
           <div className="DocumentsContain">
             <Document
               title="Formato C204 - Kirby"
@@ -65,7 +65,7 @@ const Documents = () => {
         </section>
 
         <section className="DocumentsList">
-          <h2 className="DocumentsList__title">Frente Hammurabi</h2>
+          <h2 className="DocumentsList__title">Hammurabi</h2>
           <div className="DocumentsContain">
             <Document
               title="Reglas de Calidad Kirby"
@@ -81,9 +81,9 @@ const Documents = () => {
         </section>
 
         <section className="DocumentsList">
-          <h2 className="DocumentsList__title">Frente Gestion de Mallas</h2>
+          <h2 className="DocumentsList__title">Gestion de Mallas</h2>
           <div className="DocumentsContain">
-          <Document
+            <Document
               title="Formato C204 - Mallas"
               link="https://docs.google.com/document/d/1kj-81WAd_kDcAC6iK2HqEIhf4SrrAd3H-W8WthIfx_8/edit?usp=sharing"
               fileType="gd"
@@ -92,9 +92,9 @@ const Documents = () => {
         </section>
 
         <section className="DocumentsList">
-          <h2 className="DocumentsList__title">Frente Apagado Deuda Técnica</h2>
+          <h2 className="DocumentsList__title">Apagado Deuda Técnica</h2>
           <div className="DocumentsContain">
-          <Document
+            <Document
               title="Tablero Seguimiento Deudas Técnicas"
               link="https://docs.google.com/spreadsheets/d/1vMbVyMPm5ymPgan6FxF03C8H8DgUREKnLNqZVIbQs34/edit#gid=45860166"
               fileType="gs"

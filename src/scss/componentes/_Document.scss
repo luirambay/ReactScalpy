@@ -7,6 +7,7 @@
   }
 
   &List {
+    counter-reset: counterTitle;
     margin-bottom: 4em;
 
     &__title {
@@ -36,8 +37,15 @@
   }
 
   &Header {
+    &__title::before {
+      content: "(" counter(counterTitle) ")" " - ";
+      color: red;
+      font-weight: bold;
+    }
+
     &__title {
       font-size: 14px;
+      counter-increment: counterTitle;
     }
 
     &__subtitle {

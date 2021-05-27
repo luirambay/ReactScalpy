@@ -3,7 +3,6 @@ function PaintValue(valueJson, valueHtml, valuePainter, refArea) {
   const resultIncludes = valueJson
     .toLowerCase()
     .includes(valueHtml.toLowerCase());
-    console.log(resultIncludes);
 
   painterResults(resultComparation, resultIncludes, valuePainter, refArea);
 }

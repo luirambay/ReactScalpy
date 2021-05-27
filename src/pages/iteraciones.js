@@ -6,7 +6,7 @@ const Iteraciones = () => {
     <div className="Home PageView">
       <h1 className="MainContent__title">Iteraciones</h1>
       <div className="Graphic">
-        <FrameGraphic source="https://datastudio.google.com/reporting/1mhBeJoVZvwRqKieAXvb2GcoQCY3AMFX4/page/zApRB" />
+        <FrameGraphic source="https://datastudio.google.com/embed/reporting/1mhBeJoVZvwRqKieAXvb2GcoQCY3AMFX4/page/zApRB" />
       </div>
     </div>
   );

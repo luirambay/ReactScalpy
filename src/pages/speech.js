@@ -1,27 +1,30 @@
 import React, { useState } from "react";
 import useGetApi from "../customHooks/useGetApi";
-
 import PageError from "../components/pageError";
 import NotFound from "../components/notFound";
 import SearchForm from "../components/searchForm";
 
 import preloader from "../../public/assets/loader.svg";
 
-const Repository = () => {
+const Speech = () => {
   const [response, loader, error] = useGetApi({
-    spreadsheetId: "1eS94lxFcp5u51Fz9lR1qUBdCKXw34FqnxqVfD42y4IA",
-    ranges: ["REPOSITORIOS!A1:Q1", "REPOSITORIOS!A2:Q78"],
+    // spreadsheetId: "1UQxGNPDoUC6frmgqib3pqaZaCPaj4wRXirz6jANvnW8",
+    spreadsheetId: "1GriODdvxdaGI_Ujb40E_7gvSL8PqFsQooOl1h7jxUkg",
+    ranges: ["Speech!B2:G2", "Speech!B3:G50"],
   });
+
   const [query, setQuery] = useState("");
 
   function handleQuery(e) {
     setQuery(e.target.value);
   }
 
-  const filterTable = response.dataB.filter((row) => {
-    return `${row[0]} ${row[1]} ${row[2]} ${row[3]} ${row[4]} ${row[5]} ${row[7]} ${row[9]}`
-      .toLowerCase()
-      .includes(query.toLowerCase());
+  const filterByX = response.dataB.filter((row) => {
+    return `${row[5]}`.toLowerCase().includes("x");
+  });
+
+  const filterByQuery = filterByX.filter((row) => {
+    return `${row[1]}`.toLowerCase().includes(query.toLowerCase());
   });
 
   if (error) {
@@ -29,9 +32,9 @@ const Repository = () => {
   }
 
   return (
-    <div className="Repository PageView">
-      <h1 className="MainContent__title">Repositorio</h1>
-      <section className="Table Repository">
+    <div className="Projects PageView">
+      <h1 className="Projects__title">Speech</h1>
+      <section className="Table StateTable">
         <div className="TableOptions">
           <SearchForm
             title="Buscar"
@@ -42,7 +45,7 @@ const Repository = () => {
 
         {loader && <img src={preloader} width="40" />}
 
-        {filterTable.length === 0 ? (
+        {filterByQuery.length === 0 ? (
           <NotFound />
         ) : (
           <div className="TableDataWrap">
@@ -55,23 +58,22 @@ const Repository = () => {
                     <th className="TableDataHead__col">{el[2]}</th>
                     <th className="TableDataHead__col">{el[3]}</th>
                     <th className="TableDataHead__col">{el[4]}</th>
-                    <th className="TableDataHead__col">{el[5]}</th>
-                    <th className="TableDataHead__col">{el[7]}</th>
-                    <th className="TableDataHead__col">{el[9]}</th>
                   </tr>
                 ))}
               </thead>
               <tbody className="TableDataBody">
-                {filterTable.map((el, index) => (
+                {filterByQuery.map((el, index) => (
                   <tr className="TableDataBody__row" key={index}>
                     <td className="TableDataBody__col">{el[0]}</td>
                     <td className="TableDataBody__col">{el[1]}</td>
                     <td className="TableDataBody__col">{el[2]}</td>
                     <td className="TableDataBody__col">{el[3]}</td>
-                    <td className="TableDataBody__col">{el[4]}</td>
-                    <td className="TableDataBody__col">{el[5]}</td>
-                    <td className="TableDataBody__col">{el[7]}</td>
-                    <td className="TableDataBody__col">{el[9]}</td>
+                    <td
+                      style={{ textAlign: "center" }}
+                      className="TableDataBody__col"
+                    >
+                      {el[4]}
+                    </td>
                   </tr>
                 ))}
               </tbody>
@@ -83,4 +85,4 @@ const Repository = () => {
   );
 };
 
-export default Repository;
+export default Speech;

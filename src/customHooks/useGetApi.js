@@ -1,6 +1,7 @@
 import { useState, useEffect } from "react";
 
-const CLIENT_ID = "";
+const CLIENT_ID =
+  "";
 const API_KEY = "";
 const DISCOVERY_DOCS = [
   "https://sheets.googleapis.com/$discovery/rest?version=v4",
@@ -9,7 +10,6 @@ const SCOPES = "https://www.googleapis.com/auth/spreadsheets.readonly";
 
 export default function UsetGetApi(parameters) {
   const [response, setResponse] = useState({ dataH: [], dataB: [] });
-  const [btnActive, setBtnActive] = useState(true);
   const [loader, setLoader] = useState(false);
   const [error, setError] = useState(null);
 
@@ -45,13 +45,10 @@ export default function UsetGetApi(parameters) {
 
     function updateSigninStatus(isSignedIn) {
       if (isSignedIn) {
-        setBtnActive(false);
-
         if (isSubscribed) {
           listMajors();
         }
       } else {
-        setBtnActive(true);
         setLoader(false);
       }
     }
@@ -60,9 +57,10 @@ export default function UsetGetApi(parameters) {
       setLoader(true);
       setError(false);
       try {
-        const response = await window.gapi.client.sheets.spreadsheets.values.batchGet(
-          parameters
-        );
+        const response =
+          await window.gapi.client.sheets.spreadsheets.values.batchGet(
+            parameters
+          );
 
         const dataH = response.result.valueRanges[0].values;
         const dataB = response.result.valueRanges[1].values;
@@ -97,21 +95,5 @@ export default function UsetGetApi(parameters) {
     return () => (isSubscribed = false);
   }, []);
 
-  function handleAuthClick() {
-    window.gapi.auth2.getAuthInstance().signIn();
-  }
-
-  function handleSignoutClick() {
-    window.gapi.auth2.getAuthInstance().signOut();
-    window.location.reload(true);
-  }
-
-  return [
-    response,
-    btnActive,
-    loader,
-    error,
-    handleAuthClick,
-    handleSignoutClick,
-  ];
+  return [response, loader, error];
 }

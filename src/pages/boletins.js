@@ -7,16 +7,10 @@ import SearchForm from "../components/searchForm";
 import preloader from "../../public/assets/loader.svg";
 
 const Boletins = () => {
-  const [
-    response,
-    btnActive,
-    loader,
-    error,
-    handleAuthClick,
-    handleSignoutClick,
-  ] = useGetApi({
-    spreadsheetId: "1UQxGNPDoUC6frmgqib3pqaZaCPaj4wRXirz6jANvnW8",
-    ranges: ["Boletines!A1:E1", "Boletines!A2:E50"],
+  const [response, loader, error] = useGetApi({
+    // spreadsheetId: "1UQxGNPDoUC6frmgqib3pqaZaCPaj4wRXirz6jANvnW8",
+    spreadsheetId: "1GriODdvxdaGI_Ujb40E_7gvSL8PqFsQooOl1h7jxUkg",
+    ranges: ["Boletines DQA!A1:E1", "Boletines DQA!A2:E50"],
   });
 
   const [query, setQuery] = useState("");
@@ -47,15 +41,6 @@ const Boletins = () => {
             valueQuery={query}
             handleValueSearch={handleQuery}
           />
-          {btnActive ? (
-            <button className="btn-signIn" onClick={handleAuthClick}>
-              Acceder para obtener datos
-            </button>
-          ) : (
-            <button className="btn-signOut" onClick={handleSignoutClick}>
-              Desconectarse
-            </button>
-          )}
         </div>
 
         {loader && <img src={preloader} width="40" />}

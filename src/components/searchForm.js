@@ -37,7 +37,7 @@ const SearchForm = ({ title, valueQuery, handleValueSearch }) => {
           ref={inputRef}
           type="text"
           defaultValue={valueQuery}
-          maxLength="20"
+          maxLength="32"
           name="searchTable"
           onChange={handleValueSearch}
         />

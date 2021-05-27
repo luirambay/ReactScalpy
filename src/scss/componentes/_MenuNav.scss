@@ -24,10 +24,13 @@
       font-size: $fontSize-parrafo;
       font-weight: normal;
       display: grid;
-      grid-template-columns: auto auto 1fr;
+      grid-template-columns: auto 1fr;
+      column-gap: 8px;
 
       &__icon {
         padding-right: 18px;
+        width: 15px;
+        height: 15px;
       }
     }
 

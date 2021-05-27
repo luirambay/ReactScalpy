@@ -27,7 +27,7 @@ body.dark .titleTableData {
 
 .TableOptions {
   display: grid;
-  grid-template-columns: 1fr auto;
+  grid-template-columns: 0.5fr;
   column-gap: 12px;
 
   body.dark & {
