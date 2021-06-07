@@ -8,6 +8,7 @@ import Malla from "../pages/malla";
 import Home from "../pages/home";
 import Boletins from "../pages/boletins";
 import Speech from "../pages/speech";
+import Label from "../pages/label";
 import Project from "../pages/projects";
 import Repository from "../pages/repository";
 import Graphics from "../pages/graphics";
@@ -33,6 +34,7 @@ const App = () => {
           <Route exact path="/home" component={Home} />
           <Route exact path="/boletins" component={Boletins} />
           <Route exact path="/speech" component={Speech} />
+          <Route exact path="/label" component={Label} />
           <Route exact path="/project" component={Project} />
           <Route exact path="/repository" component={Repository} />
           <Route exact path="/graphics" component={Graphics} />

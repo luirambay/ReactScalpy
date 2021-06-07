@@ -25,6 +25,9 @@ const MenuNav = () => {
     "dora.guerrero.contractor@bbva.com",
     "fryda.palomino.contractor@bbva.com",
     "sbarrenechea@bbva.com",
+    "jhessica.alvarez.contractor@bbva.com",
+    "kelly.delacruz.oriundo.contractor@bbva.com",
+    "carol.paucca.contractor@bbva.com",
   ];
 
   const isCorreo = () => {
@@ -58,6 +61,12 @@ const MenuNav = () => {
               <NavLink className="MenuNavList__link" to="/speech">
                 <i className="far fa-newspaper MenuNavList__link__icon"></i>
                 Speechs
+              </NavLink>
+            </li>
+            <li className="MenuNavList__item">
+              <NavLink className="MenuNavList__link" to="/label">
+                <i className="far fa-newspaper MenuNavList__link__icon"></i>
+                Labels JIRA
               </NavLink>
             </li>
             <li className="MenuNavList__item">
@@ -145,6 +154,12 @@ const MenuNav = () => {
             <NavLink className="MenuNavList__link" to="/speech">
               <i className="far fa-newspaper MenuNavList__link__icon"></i>
               Speechs
+            </NavLink>
+          </li>
+          <li className="MenuNavList__item">
+            <NavLink className="MenuNavList__link" to="/label">
+              <i className="far fa-newspaper MenuNavList__link__icon"></i>
+              Labels JIRA
             </NavLink>
           </li>
           <li className="MenuNavList__item">
