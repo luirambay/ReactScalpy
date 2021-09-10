@@ -37,11 +37,11 @@
   }
 
   &Header {
-    &__title::before {
+    /*&__title::before {
       content: "(" counter(counterTitle) ")" " - ";
       color: red;
       font-weight: bold;
-    }
+    }*/
 
     &__title {
       font-size: 14px;

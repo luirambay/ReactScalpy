@@ -10,14 +10,27 @@ const Boletins = () => {
   const [response, loader, error] = useGetApi({
     // spreadsheetId: "1UQxGNPDoUC6frmgqib3pqaZaCPaj4wRXirz6jANvnW8",
     spreadsheetId: "1GriODdvxdaGI_Ujb40E_7gvSL8PqFsQooOl1h7jxUkg",
-    ranges: ["Boletines DQA!A1:E1", "Boletines DQA!A2:E50"],
+    ranges: ["Boletines DQA!A1:E1", "Boletines DQA!A2:E100"],
   });
+  // const [arrayRow, setArrayRow] = useState([]);
 
   const [query, setQuery] = useState("");
 
   function handleQuery(e) {
     setQuery(e.target.value);
   }
+  // function handleValues(ev) {
+  //   const elements = document.querySelectorAll(".TableDataBody__row");
+  //   var btnsArr = Array.from(elements);
+  //   let rowArray = [];
+  //   btnsArr.forEach((el) => {
+  //     if (el.childNodes[0].innerHTML == ev.target.id) {
+  //       const arrayNew = Array.from(el.childNodes);
+  //       return rowArray.push(arrayNew);
+  //     }
+  //   });
+  //   setArrayRow(rowArray);
+  // }
 
   // const filterDataActive = response.dataB.filter((row) => {
   //   return `${row[2]}`.includes("Si") ? row[3] : "";
@@ -43,7 +56,7 @@ const Boletins = () => {
           />
         </div>
 
-        {loader && <img src={preloader} width="40" />}
+        {loader && <img className="preloaderIcon" src={preloader} width="40" />}
 
         {filterTable.length === 0 ? (
           <NotFound />
@@ -63,6 +76,7 @@ const Boletins = () => {
               <tbody className="TableDataBody">
                 {filterTable.reverse().map((el, index) => (
                   <tr className="TableDataBody__row" key={index}>
+                    {/* <td className="TableDataBody__col">{index}</td> */}
                     <td className="TableDataBody__col">{el[0]}</td>
                     <td className="TableDataBody__col">{el[1]}</td>
                     <td className="TableDataBody__col">{el[2]}</td>
@@ -71,6 +85,11 @@ const Boletins = () => {
                         <i className="fas fa-file"></i>
                       </a>
                     </td>
+                    {/* <td>
+                      <button id={index} onClick={handleValues}>
+                        asignar
+                      </button>
+                    </td> */}
                   </tr>
                 ))}
               </tbody>

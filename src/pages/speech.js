@@ -43,7 +43,7 @@ const Speech = () => {
           />
         </div>
 
-        {loader && <img src={preloader} width="40" />}
+        {loader && <img className="preloaderIcon" src={preloader} width="40" />}
 
         {filterByQuery.length === 0 ? (
           <NotFound />
