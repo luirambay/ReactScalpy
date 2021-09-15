@@ -12,6 +12,7 @@ import Label from "../pages/label";
 import Project from "../pages/projects";
 import Repository from "../pages/repository";
 import Graphics from "../pages/graphics";
+import GraphicsDQA from "../pages/graphicsDQA";
 import GraphicKirby from "../pages/graphic-kirby";
 import Ingestas from "../pages/ingestas";
 import Iteraciones from "../pages/iteraciones";
@@ -20,7 +21,14 @@ import DeudaTecnica from "../pages/deudaTecnica";
 import DeudaTecnicaSeguimiento from "../pages/deudaTecnicaSeguimiento";
 import Tipologias from "../pages/tipologias";
 import Documents from "../pages/documents";
-import VerifiedIngesta from "../pages/verified-ingesta";
+import Estandares from "../pages/estandares";
+import Talleres from "../pages/talleres";
+import Tableros from "../pages/tableros";
+import VerifiedIngesta from "../pages/validator";
+import VerifiedJIRA from "../pages/jira";
+import SeguimientoDQA from "../pages/seguimientoDQA";
+// import GeneratorC204 from "../pages/generator";
+import RulesCSV from "../pages/rules";
 import PageError from "./pageError";
 
 const App = () => {
@@ -38,9 +46,15 @@ const App = () => {
           <Route exact path="/project" component={Project} />
           <Route exact path="/repository" component={Repository} />
           <Route exact path="/graphics" component={Graphics} />
+          <Route exact path="/graphicsdqa" component={GraphicsDQA} />
           <Route exact path="/graphics/pr" component={GraphicKirby} />
           <Route exact path="/graphics/ingestas" component={Ingestas} />
           <Route exact path="/graphics/deudaTecnica" component={DeudaTecnica} />
+          <Route
+            exact
+            path="/graphicsdqa/seguimientoDQA"
+            component={SeguimientoDQA}
+          />
           <Route
             exact
             path="/graphics/deudaTecnicaSeguimiento"
@@ -50,7 +64,13 @@ const App = () => {
           <Route exact path="/graphics/iteraciones" component={Iteraciones} />
           <Route exact path="/table" component={Bui} />
           <Route exact path="/documents" component={Documents} />
-          <Route exact path="/check" component={VerifiedIngesta} />
+          <Route exact path="/estandares" component={Estandares} />
+          <Route exact path="/talleres" component={Talleres} />
+          <Route exact path="/tableros" component={Tableros} />
+          <Route exact path="/validator" component={VerifiedIngesta} />
+          <Route exact path="/jira" component={VerifiedJIRA} />
+          {/* <Route exact path="/generator" component={GeneratorC204} /> */}
+          <Route exact path="/rules" component={RulesCSV} />
           <Route component={PageError} />
         </Switch>
       </Layout>

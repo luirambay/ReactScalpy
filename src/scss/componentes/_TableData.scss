@@ -8,6 +8,26 @@
   margin-bottom: 8px;
 }
 
+.GraphicHead {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.btn-manual {
+  background-color: $color-terciario;
+  color: white;
+  border: 0;
+  padding: 0.5em 2em;
+  border-radius: 4px;
+  cursor: pointer;
+  text-align: center;
+}
+
+.btn-manual:hover {
+  background-color: $color-terciario-alt;
+}
+
 body.dark .titleTableData {
   color: #fff;
 }
@@ -17,6 +37,11 @@ body.dark .titleTableData {
   row-gap: 2em;
   height: auto;
   column-gap: initial;
+}
+
+.preloaderIcon {
+  position: fixed;
+  top: 150px;
 }
 
 .Table {

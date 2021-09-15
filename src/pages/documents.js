@@ -5,99 +5,130 @@ import Document from "../components/document";
 const Documents = () => {
   return (
     <section className="Documents PageView">
-      <h1 className="MainContent__title">Documentos</h1>
+      <h1 className="MainContent__title">Formatos</h1>
       <div className="Documents">
         <section className="DocumentsList">
-          <h2 className="DocumentsList__title">Tableros</h2>
+          <h2 className="DocumentsList__title">C204 - Ingestas</h2>
           <div className="DocumentsContain">
             <Document
-              title="BUI"
-              link="https://docs.google.com/spreadsheets/d/1UNn1b0KZfmZXxFnPkTChv-thwI2mr9AtrtdIuztySAo/edit?ts=5cc87415#gid=834610413"
-              fileType="gs"
-            />
-            <Document
-              title="Tablero Seguimiento de Ingestas"
-              link="https://docs.google.com/spreadsheets/d/12ywigRiIbAz3e9zxs5ObnbyUELCmfG0qSkx5zRuBFOs/edit?ts=5d324b47#gid=668285374"
-              fileType="gs"
-            />
-            <Document
-              title="Tablero Seguimiento de Procesamientos"
-              link="https://docs.google.com/spreadsheets/d/1Bl2bh6xlIAc76utfyakNnpO2z6Pb6HQtwIemDifsuJU/edit#gid=100867519"
-              fileType="gs"
-            />
-            <Document
-              title="Tablero Seguimiento de Mallas"
-              link="https://docs.google.com/spreadsheets/d/1kD6pMW61nvWlCWHeTpWJZYkucvlI5MFSFTa4QzotboM/edit#gid=1051309830"
-              fileType="gs"
-            />
-          </div>
-        </section>
-
-        <section className="DocumentsList">
-          <h2 className="DocumentsList__title">Revisión de PRS</h2>
-          <div className="DocumentsContain">
-            <Document
-              title="Formato C204 - Kirby"
-              link="https://docs.google.com/document/d/12fSl79c2jOrz70ABLEk722iX-q4CvDFt5ILUN4XrQ8g/edit?usp=sharing"
+              title="Con Kirby"
+              link="https://docs.google.com/document/d/1mu3U0AWRp37raGnRhzk4h4CMLA7xH2GEIVQNB-4kmto/edit"
               fileType="gd"
             />
             <Document
-              title="Formato C204 - Hammurabi"
-              link="https://docs.google.com/document/d/1qjFmXzk4DwfciKt5iU0qIoY76NpwmCH-DIZCp5RLgI0/edit?usp=sharing"
+              title="Con Arquetipo Scala"
+              link="https://docs.google.com/document/d/1vT5wRIDallt9JEI7eEEH8vEIHwMXbHgyCHE_RrUrI2g/edit"
               fileType="gd"
             />
             <Document
-              title="Formato C204 - Procesamiento"
-              link="https://docs.google.com/document/d/1gZemlySBEwzUtvAMo16hBDb4V4mGuVzxk_QvanwMDvU/edit?usp=sharing"
+              title="Con Kirby - MSPD"
+              link="https://docs.google.com/document/d/1AI0l4rsApumrdGR3gGXQdFmNm5WwYr_y_Cqy-IDFmYc/edit"
               fileType="gd"
             />
             <Document
-              title="Formato C204 - Notebook"
-              link="https://docs.google.com/document/d/1PViWZ29oPPKw-ygrpwWUM3EhdMVCeHna0AUhnAg3T6o/edit?usp=sharing"
-              fileType="gd"
-            />
-            <Document
-              title="Documentación - Outstaging Temporales"
-              link="https://docs.google.com/spreadsheets/d/1VpstXJDbhWOvMGQwL1tpd4ZLWLRt5IQDWJBYxIU2qNY/edit?usp=sharing"
+              title="Hammurabi"
+              link="https://docs.google.com/document/d/1KTaHxr3yTpiBXnnOb3oba8a5rrihz4XO57B-i1LEK6c/edit"
               fileType="gd"
             />
           </div>
         </section>
 
         <section className="DocumentsList">
-          <h2 className="DocumentsList__title">Hammurabi</h2>
+          <h2 className="DocumentsList__title">C204 - Procesamiento</h2>
           <div className="DocumentsContain">
             <Document
-              title="Reglas de Calidad Kirby"
-              link="https://drive.google.com/file/d/1aryZBRHdObaIEiG-pYNIR81QbhwjPyuI/view?usp=sharing"
+              title="Con Arquetipo Scala"
+              link="https://docs.google.com/document/d/1vT5wRIDallt9JEI7eEEH8vEIHwMXbHgyCHE_RrUrI2g/edit"
               fileType="gd"
             />
             <Document
-              title="Reglas de Calidad Procesamiento"
-              link="https://drive.google.com/file/d/1dXlmX6PnUrH6Mjynox9-zdRAizeYvdbS/view?usp=sharing"
+              title="Con Process Manager"
+              link="https://docs.google.com/document/d/1cKc6FRVbQsk2E-RtO3YBSQ-RdZDMOa48a-VovBaelLA/edit"
+              fileType="gd"
+            />
+            <Document
+              title="Con Kirby"
+              link="https://docs.google.com/document/d/1mu3U0AWRp37raGnRhzk4h4CMLA7xH2GEIVQNB-4kmto/edit"
+              fileType="gd"
+            />
+            <Document
+              title="Con Scaffolder"
+              link="https://docs.google.com/document/d/18ENQMEV9JK7lrhMQOs8czimFWDqCsyfeE80GxJLyfEA/edit"
               fileType="gd"
             />
           </div>
         </section>
 
         <section className="DocumentsList">
-          <h2 className="DocumentsList__title">Gestion de Mallas</h2>
+          <h2 className="DocumentsList__title">C204 - Otros casos</h2>
           <div className="DocumentsContain">
             <Document
-              title="Formato C204 - Mallas"
-              link="https://docs.google.com/document/d/1kj-81WAd_kDcAC6iK2HqEIhf4SrrAd3H-W8WthIfx_8/edit?usp=sharing"
+              title="Operativización con Kirby"
+              link="https://docs.google.com/document/d/1mu3U0AWRp37raGnRhzk4h4CMLA7xH2GEIVQNB-4kmto/edit"
+              fileType="gd"
+            />
+            <Document
+              title="Mallas"
+              link="https://docs.google.com/document/d/1j9P3Vl3Su3P193iHnjbmZ1tbjliLLQQSRzxlRnIWPrk/edit"
+              fileType="gd"
+            />
+            <Document
+              title="Host"
+              link="https://docs.google.com/document/d/1-lgqMYMIAuKlPKPzpFawU3F7Tah8uLYZ5b1n5hVZToo/edit"
+              fileType="gd"
+            />
+            <Document
+              title="CTL - Data X"
+              link="https://docs.google.com/document/d/1PW8yYUJRFwDM0bmy4CdDmTiTNtI8ZlayvahxcGQCj7Y/edit"
+              fileType="gd"
+            />
+            <Document
+              title="Migration Tool"
+              link="https://docs.google.com/document/d/101v50cIFimruciEttx4xYMmE8GUhTJmdZh62b5oNcic/edit"
+              fileType="gd"
+            />
+            <Document
+              title="Spark Compactor"
+              link="https://docs.google.com/document/d/1C3hHmYz0sHcujjuRNNOjwrqf_kKMyC6a6J5fdP8LIoc/edit"
               fileType="gd"
             />
           </div>
         </section>
 
         <section className="DocumentsList">
-          <h2 className="DocumentsList__title">Apagado Deuda Técnica</h2>
+          <h2 className="DocumentsList__title">Reglas de calidad</h2>
           <div className="DocumentsContain">
             <Document
-              title="Tablero Seguimiento Deudas Técnicas"
-              link="https://docs.google.com/spreadsheets/d/1vMbVyMPm5ymPgan6FxF03C8H8DgUREKnLNqZVIbQs34/edit#gid=45860166"
+              title="Ingesta"
+              link="https://drive.google.com/file/d/1Jtf_JKk4lANenQkklOHlnGen0WkmKGw5/view?usp=sharing"
               fileType="gs"
+            />
+            <Document
+              title="Procesamiento"
+              link="https://drive.google.com/file/d/1TdvEsOWF5ThrGwgFLl7-XqxbhExYmfmV/view?usp=sharing"
+              fileType="gs"
+            />
+          </div>
+        </section>
+
+        <section className="DocumentsList">
+          <h2 className="DocumentsList__title">Salidas No Persistentes</h2>
+          <div className="DocumentsContain">
+            <Document
+              title="Outstaging / Temporales"
+              link="https://docs.google.com/spreadsheets/d/1VpstXJDbhWOvMGQwL1tpd4ZLWLRt5IQDWJBYxIU2qNY/edit"
+              fileType="gd"
+            />
+          </div>
+        </section>
+
+        <section className="DocumentsList">
+          <h2 className="DocumentsList__title">P110</h2>
+          <div className="DocumentsContain">
+            <Document
+              title="Host"
+              link="https://docs.google.com/spreadsheets/d/1Tvh5RPt4fZyPBY49QT11x2erkgARWvoJE7vomnsnH1c/edit"
+              fileType="gd"
             />
           </div>
         </section>

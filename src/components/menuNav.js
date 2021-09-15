@@ -53,10 +53,28 @@ const MenuNav = () => {
                 Solicitud Revisión PR
               </NavLink>
             </li>
+            <li className="MenuNavList__item">
+              <NavLink className="MenuNavList__link" to="/graphics/pr">
+                <i className="fa fa-chart-line MenuNavList__link__icon"></i>
+                Seguimiento Solicitudes
+              </NavLink>
+            </li>
           </ul>
 
           <h3 className="MenuNavList__title">Documentación</h3>
           <ul>
+            <li className="MenuNavList__item">
+              <NavLink className="MenuNavList__link" to="/estandares">
+                <i className="far fa-newspaper MenuNavList__link__icon"></i>
+                Estándares
+              </NavLink>
+            </li>
+            <li className="MenuNavList__item">
+              <NavLink className="MenuNavList__link" to="/talleres">
+                <i className="far fa-newspaper MenuNavList__link__icon"></i>
+                Talleres DQA
+              </NavLink>
+            </li>
             <li className="MenuNavList__item">
               <NavLink className="MenuNavList__link" to="/speech">
                 <i className="far fa-newspaper MenuNavList__link__icon"></i>
@@ -77,18 +95,14 @@ const MenuNav = () => {
             </li>
             <li className="MenuNavList__item">
               <NavLink className="MenuNavList__link" to="/documents">
-                <i className="fa fa-file MenuNavList__link__icon"></i>
-                Documentos
+                <i className="far fa-newspaper MenuNavList__link__icon"></i>
+                Formatos
               </NavLink>
             </li>
-          </ul>
-
-          <h3 className="MenuNavList__title">Reportes</h3>
-          <ul>
             <li className="MenuNavList__item">
-              <NavLink className="MenuNavList__link" to="/boletins">
+              <NavLink className="MenuNavList__link" to="/tableros">
                 <i className="far fa-newspaper MenuNavList__link__icon"></i>
-                Boletines
+                Tableros
               </NavLink>
             </li>
           </ul>
@@ -101,6 +115,28 @@ const MenuNav = () => {
                 Validador de Mallas
               </NavLink>
             </li>
+            <li className="MenuNavList__item">
+              <NavLink className="MenuNavList__link" to="/validator">
+                <i className="fa fa-clipboard-list MenuNavList__link__icon"></i>
+                Validador de Ingestas
+              </NavLink>
+            </li>
+            <li className="MenuNavList__item">
+              <NavLink className="MenuNavList__link" to="/jira">
+                <i className="fa fa-clipboard-list MenuNavList__link__icon"></i>
+                Validador de JIRA
+              </NavLink>
+            </li>
+            <li className="MenuNavList__item">
+              <a
+                target="blank"
+                className="MenuNavList__link"
+                href="https://drive.google.com/drive/folders/1DoJDk38Qz_RdY-uS7-dppJ8vhW9pt06Z?usp=sharing"
+              >
+                <i className="fa fa-clipboard-list MenuNavList__link__icon"></i>
+                Generador C204
+              </a>
+            </li>
           </ul>
 
           <h3 className="MenuNavList__title">Extras</h3>
@@ -112,15 +148,9 @@ const MenuNav = () => {
               </NavLink>
             </li>
             <li className="MenuNavList__item">
-              <NavLink className="MenuNavList__link" to="/repository">
-                <i className="fa fa-code-branch MenuNavList__link__icon"></i>
-                Repositorios
-              </NavLink>
-            </li>
-            <li className="MenuNavList__item">
               <NavLink className="MenuNavList__link dropdown" to="/graphics">
                 <i className="fa fa-chart-line MenuNavList__link__icon"></i>
-                Gráficos
+                Dashboards
               </NavLink>
             </li>
           </ul>
@@ -146,10 +176,38 @@ const MenuNav = () => {
               Solicitud de PR
             </NavLink>
           </li>
+          <li className="MenuNavList__item">
+            <NavLink className="MenuNavList__link" to="/graphics/pr">
+              <i className="fa fa-chart-line MenuNavList__link__icon"></i>
+              Seguimiento Solicitudes
+            </NavLink>
+          </li>
         </ul>
 
         <h3 className="MenuNavList__title">Documentación</h3>
         <ul>
+          <li className="MenuNavList__item">
+            <a
+              target="blank"
+              className="MenuNavList__link"
+              href="https://docs.google.com/document/d/1gTrDrHdwLyQlO5ftCLuMvV9h_mUOkVmPZbH3UOPWp20/edit"
+            >
+              <i className="far fa-newspaper MenuNavList__link__icon"></i>
+              Starter Pack
+            </a>
+          </li>
+          <li className="MenuNavList__item">
+            <NavLink className="MenuNavList__link" to="/estandares">
+              <i className="far fa-newspaper MenuNavList__link__icon"></i>
+              Estándares
+            </NavLink>
+          </li>
+          <li className="MenuNavList__item">
+            <NavLink className="MenuNavList__link" to="/talleres">
+              <i className="far fa-newspaper MenuNavList__link__icon"></i>
+              Talleres DQA
+            </NavLink>
+          </li>
           <li className="MenuNavList__item">
             <NavLink className="MenuNavList__link" to="/speech">
               <i className="far fa-newspaper MenuNavList__link__icon"></i>
@@ -170,8 +228,14 @@ const MenuNav = () => {
           </li>
           <li className="MenuNavList__item">
             <NavLink className="MenuNavList__link" to="/documents">
-              <i className="fa fa-file MenuNavList__link__icon"></i>
-              Documentos
+              <i className="far fa-newspaper MenuNavList__link__icon"></i>
+              Formatos
+            </NavLink>
+          </li>
+          <li className="MenuNavList__item">
+            <NavLink className="MenuNavList__link" to="/tableros">
+              <i className="far fa-newspaper MenuNavList__link__icon"></i>
+              Tableros
             </NavLink>
           </li>
         </ul>
@@ -195,10 +259,26 @@ const MenuNav = () => {
             </NavLink>
           </li>
           <li className="MenuNavList__item">
-            <NavLink className="MenuNavList__link" to="/check">
-              <i className="fa fa-bullhorn MenuNavList__link__icon"></i>
-              Validar ingestas
+            <NavLink className="MenuNavList__link" to="/validator">
+              <i className="fa fa-clipboard-list MenuNavList__link__icon"></i>
+              Validador de Ingestas
             </NavLink>
+          </li>
+          <li className="MenuNavList__item">
+            <NavLink className="MenuNavList__link" to="/jira">
+              <i className="fa fa-clipboard-list MenuNavList__link__icon"></i>
+              Validador de JIRA
+            </NavLink>
+          </li>
+          <li className="MenuNavList__item">
+            <a
+              target="blank"
+              className="MenuNavList__link"
+              href="https://drive.google.com/drive/folders/1DoJDk38Qz_RdY-uS7-dppJ8vhW9pt06Z?usp=sharing"
+            >
+              <i className="fa fa-clipboard-list MenuNavList__link__icon"></i>
+              Generador C204
+            </a>
           </li>
         </ul>
 
@@ -211,15 +291,15 @@ const MenuNav = () => {
             </NavLink>
           </li>
           <li className="MenuNavList__item">
-            <NavLink className="MenuNavList__link" to="/repository">
-              <i className="fa fa-code-branch MenuNavList__link__icon"></i>
-              Repositorios
+            <NavLink className="MenuNavList__link dropdown" to="/graphics">
+              <i className="fa fa-chart-line MenuNavList__link__icon"></i>
+              Dashboards
             </NavLink>
           </li>
           <li className="MenuNavList__item">
-            <NavLink className="MenuNavList__link dropdown" to="/graphics">
+            <NavLink className="MenuNavList__link dropdown" to="/graphicsDQA">
               <i className="fa fa-chart-line MenuNavList__link__icon"></i>
-              Gráficos
+              Dashboards DQA
             </NavLink>
           </li>
         </ul>

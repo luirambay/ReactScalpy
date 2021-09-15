@@ -7,7 +7,8 @@ import MenuUser from "./MenuUser";
 import MenuNav from "./menuNav";
 import SwitchMode from "./SwitchMode";
 
-import Logo from "../../public/assets/logo-landscape.svg";
+import Logo from "../../public/assets/logo-landscape.png";
+//import Logo from "../../public/assets/logo-landscape.svg";
 
 const Menu = () => {
   const [data, setData] = useState({

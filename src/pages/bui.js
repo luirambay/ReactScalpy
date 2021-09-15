@@ -44,14 +44,14 @@ const Bui = () => {
     setSearch(ev.target.value);
   }
 
-  const shortDataBaseUnicaIngestas = filterTableBaseUnicaIngestas.slice(0, 10);
+  const shortDataBaseUnicaIngestas = filterTableBaseUnicaIngestas.slice(0, 15);
   const shortDataSeguimientoIngestas = filterTableSeguimientoIngestas.slice(
     0,
-    10
+    15
   );
   const shortDataSeguimientoProcesos = filterTableSeguimientoProcesos.slice(
     0,
-    10
+    15
   );
 
   if (error) {
@@ -69,8 +69,6 @@ const Bui = () => {
             handleValueSearch={handleQuery}
           />
         </div>
-
-        {loader ? <img src={preloader} width="40" /> : null}
 
         <div className="containerTablesData">
           <div className="TableDataWrap">
@@ -167,6 +165,10 @@ const Bui = () => {
                 </table>
               </div>
             )}
+
+            {loader ? (
+              <img className="preloaderIcon" src={preloader} width="40" />
+            ) : null}
 
             {filterTableSeguimientoProcesos.length === 0 ? null : (
               <div className="TableDataWrap">
