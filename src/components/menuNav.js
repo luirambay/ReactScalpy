@@ -50,7 +50,7 @@ const MenuNav = () => {
             <li className="MenuNavList__item">
               <NavLink className="MenuNavList__link" to="/pr">
                 <i className="fa fa-clipboard-list MenuNavList__link__icon"></i>
-                Solicitud de PR
+                Solicitud Revisión PR
               </NavLink>
             </li>
           </ul>
@@ -181,7 +181,7 @@ const MenuNav = () => {
           <li className="MenuNavList__item">
             <NavLink className="MenuNavList__link" to="/table">
               <i className="fa fa-clipboard-list MenuNavList__link__icon"></i>
-              Tablero
+              Tableros Data Hub
             </NavLink>
           </li>
         </ul>
