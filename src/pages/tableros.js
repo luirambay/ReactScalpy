@@ -32,7 +32,7 @@ const Documents = () => {
             />
              <Document
               title="06 - Tablero Seguimiento de Deudas Técnicas"
-              link="https://docs.google.com/spreadsheets/d/1vMbVyMPm5ymPgan6FxF03C8H8DgUREKnLNqZVIbQs34/edit#gid=2051307985"
+              link="https://docs.google.com/spreadsheets/d/1vMbVyMPm5ymPgan6FxF03C8H8DgUREKnLNqZVIbQs34/edit#gid=1193157029"
               fileType="gs"
             />
           </div>

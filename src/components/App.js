@@ -27,6 +27,8 @@ import Tableros from "../pages/tableros";
 import VerifiedIngesta from "../pages/validator";
 import VerifiedJIRA from "../pages/jira";
 import SeguimientoDQA from "../pages/seguimientoDQA";
+import TableroHammurabi from "../pages/tableroHammurabi";
+import TableroMallas from "../pages/tableroMallas";
 // import GeneratorC204 from "../pages/generator";
 import RulesCSV from "../pages/rules";
 import PageError from "./pageError";
@@ -59,6 +61,16 @@ const App = () => {
             exact
             path="/graphics/deudaTecnicaSeguimiento"
             component={DeudaTecnicaSeguimiento}
+          />
+          <Route
+            exact
+            path="/graphicsdqa/tableroHammurabi"
+            component={TableroHammurabi}
+          />
+          <Route
+            exact
+            path="/graphicsdqa/tableroMallas"
+            component={TableroMallas}
           />
           <Route exact path="/graphics/tipologias" component={Tipologias} />
           <Route exact path="/graphics/iteraciones" component={Iteraciones} />

@@ -9,10 +9,6 @@ const Graphics = () => {
       <section className="GraphicsCards">
         <Card title="Seguimiento de Pull Request" source="/graphics/pr" />
         <Card
-          title="Observaciones en Pull Request"
-          source="/graphics/ingestas"
-        />
-        <Card
           title="Iteraciones en Pull Request"
           source="/graphics/iteraciones"
         />
@@ -20,15 +16,14 @@ const Graphics = () => {
           title="Deuda Técnica Stock Datio"
           source="/graphics/deudaTecnica"
         />
-        <Card
+        {/*<Card
           title="Deuda Técnica DATIO : Seguimiento de stock de fuentes"
           source="/graphics/deudaTecnicaSeguimiento"
-        />
+        />*/}
         <Card
-          title="Observaciones por Tipología Ingesta"
+          title="Observaciones por Tipología de error"
           source="/graphics/tipologias"
         />
- 
       </section>
     </section>
   );

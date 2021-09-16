@@ -56,7 +56,6 @@ export default function UsetGetApi() {
 
         const profile = googleUser.getBasicProfile();
 
-        
         const userName = profile.getName();
         const email = profile.getEmail();
         const userPhoto = profile.getImageUrl();
@@ -85,5 +84,12 @@ export default function UsetGetApi() {
     window.location.reload(true);
   }
 
-  return [btnActive, email, userName, userPhoto, handleAuthClick, handleSignoutClick];
+  return [
+    btnActive,
+    email,
+    userName,
+    userPhoto,
+    handleAuthClick,
+    handleSignoutClick,
+  ];
 }
