@@ -20,15 +20,14 @@ const Graphics = () => {
           title="Deuda Técnica Stock Datio"
           source="/graphics/deudaTecnica"
         />
-        <Card
+        {/*<Card
           title="Deuda Técnica DATIO : Seguimiento de stock de fuentes"
           source="/graphics/deudaTecnicaSeguimiento"
-        />
+        />*/}
         <Card
-          title="Observaciones por Tipología Ingesta"
+          title="Observaciones por Tipología de error"
           source="/graphics/tipologias"
         />
- 
       </section>
     </section>
   );

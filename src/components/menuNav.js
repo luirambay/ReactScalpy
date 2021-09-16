@@ -112,26 +112,26 @@ const MenuNav = () => {
             <li className="MenuNavList__item">
               <NavLink className="MenuNavList__link" to="/malla">
                 <i className="fa fa-clipboard-list MenuNavList__link__icon"></i>
-                Validador de Mallas
+                Validador Mallas
               </NavLink>
             </li>
             <li className="MenuNavList__item">
               <NavLink className="MenuNavList__link" to="/validator">
                 <i className="fa fa-clipboard-list MenuNavList__link__icon"></i>
-                Validador de Ingestas
+                Validador Ingestas
               </NavLink>
             </li>
             <li className="MenuNavList__item">
               <NavLink className="MenuNavList__link" to="/jira">
                 <i className="fa fa-clipboard-list MenuNavList__link__icon"></i>
-                Validador de JIRA
+                Validador JIRA
               </NavLink>
             </li>
             <li className="MenuNavList__item">
               <a
                 target="blank"
                 className="MenuNavList__link"
-                href="https://drive.google.com/drive/folders/1DoJDk38Qz_RdY-uS7-dppJ8vhW9pt06Z?usp=sharing"
+                href="https://docs.google.com/document/d/1FVliK1LB3Vz8Al8WVO0CO1DZ-JXueMwdS8e6ESNHZ4o/edit"
               >
                 <i className="fa fa-clipboard-list MenuNavList__link__icon"></i>
                 Generador C204
@@ -274,7 +274,7 @@ const MenuNav = () => {
             <a
               target="blank"
               className="MenuNavList__link"
-              href="https://drive.google.com/drive/folders/1DoJDk38Qz_RdY-uS7-dppJ8vhW9pt06Z?usp=sharing"
+              href="https://docs.google.com/document/d/1FVliK1LB3Vz8Al8WVO0CO1DZ-JXueMwdS8e6ESNHZ4o/edit"
             >
               <i className="fa fa-clipboard-list MenuNavList__link__icon"></i>
               Generador C204

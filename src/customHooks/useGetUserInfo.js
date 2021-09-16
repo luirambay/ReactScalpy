@@ -1,7 +1,6 @@
 import { useState, useEffect } from "react";
 
-const CLIENT_ID =
-  "";
+const CLIENT_ID = "";
 const API_KEY = "";
 const DISCOVERY_DOCS = [
   "https://sheets.googleapis.com/$discovery/rest?version=v4",
@@ -56,7 +55,6 @@ export default function UsetGetApi() {
 
         const profile = googleUser.getBasicProfile();
 
-        
         const userName = profile.getName();
         const email = profile.getEmail();
         const userPhoto = profile.getImageUrl();
@@ -85,5 +83,12 @@ export default function UsetGetApi() {
     window.location.reload(true);
   }
 
-  return [btnActive, email, userName, userPhoto, handleAuthClick, handleSignoutClick];
+  return [
+    btnActive,
+    email,
+    userName,
+    userPhoto,
+    handleAuthClick,
+    handleSignoutClick,
+  ];
 }
