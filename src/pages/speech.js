@@ -20,11 +20,11 @@ const Speech = () => {
   }
 
   const filterByX = response.dataB.filter((row) => {
-    return `${row[5]}`.toLowerCase().includes("x");
+    return `${row[4]}`.toLowerCase().includes("x");
   });
 
   const filterByQuery = filterByX.filter((row) => {
-    return `${row[1]}`.toLowerCase().includes(query.toLowerCase());
+    return `${row[3]}`.toLowerCase().includes(query.toLowerCase());
   });
 
   if (error) {

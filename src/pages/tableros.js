@@ -30,6 +30,11 @@ const Documents = () => {
               link="https://docs.google.com/spreadsheets/d/1kD6pMW61nvWlCWHeTpWJZYkucvlI5MFSFTa4QzotboM/edit#gid=1051309830"
               fileType="gs"
             />
+             <Document
+              title="06 - Tablero Seguimiento de Deudas Técnicas"
+              link="https://docs.google.com/spreadsheets/d/1vMbVyMPm5ymPgan6FxF03C8H8DgUREKnLNqZVIbQs34/edit#gid=2051307985"
+              fileType="gs"
+            />
           </div>
         </section>
       </div>
