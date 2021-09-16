@@ -9,10 +9,6 @@ const Graphics = () => {
       <section className="GraphicsCards">
         <Card title="Seguimiento de Pull Request" source="/graphics/pr" />
         <Card
-          title="Observaciones en Pull Request"
-          source="/graphics/ingestas"
-        />
-        <Card
           title="Iteraciones en Pull Request"
           source="/graphics/iteraciones"
         />

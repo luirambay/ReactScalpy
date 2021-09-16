@@ -50,7 +50,7 @@ const MenuNav = () => {
             <li className="MenuNavList__item">
               <NavLink className="MenuNavList__link" to="/pr">
                 <i className="fa fa-clipboard-list MenuNavList__link__icon"></i>
-                Solicitud de PR
+                Solicitud Revisión PR
               </NavLink>
             </li>
             <li className="MenuNavList__item">
@@ -102,7 +102,7 @@ const MenuNav = () => {
             <li className="MenuNavList__item">
               <NavLink className="MenuNavList__link" to="/tableros">
                 <i className="far fa-newspaper MenuNavList__link__icon"></i>
-                Tableros
+                Tableros Data Hub
               </NavLink>
             </li>
           </ul>
@@ -173,7 +173,7 @@ const MenuNav = () => {
           <li className="MenuNavList__item">
             <NavLink className="MenuNavList__link" to="/pr">
               <i className="fa fa-clipboard-list MenuNavList__link__icon"></i>
-              Solicitud de PR
+              Solicitud Revisión PR
             </NavLink>
           </li>
           <li className="MenuNavList__item">
@@ -235,7 +235,7 @@ const MenuNav = () => {
           <li className="MenuNavList__item">
             <NavLink className="MenuNavList__link" to="/tableros">
               <i className="far fa-newspaper MenuNavList__link__icon"></i>
-              Tableros
+              Tableros Data Hub
             </NavLink>
           </li>
         </ul>
@@ -255,19 +255,19 @@ const MenuNav = () => {
           <li className="MenuNavList__item">
             <NavLink className="MenuNavList__link" to="/malla">
               <i className="fa fa-clipboard-list MenuNavList__link__icon"></i>
-              Validador de Mallas
+              Validador Mallas
             </NavLink>
           </li>
           <li className="MenuNavList__item">
             <NavLink className="MenuNavList__link" to="/validator">
               <i className="fa fa-clipboard-list MenuNavList__link__icon"></i>
-              Validador de Ingestas
+              Validador Ingestas
             </NavLink>
           </li>
           <li className="MenuNavList__item">
             <NavLink className="MenuNavList__link" to="/jira">
               <i className="fa fa-clipboard-list MenuNavList__link__icon"></i>
-              Validador de JIRA
+              Validador JIRA
             </NavLink>
           </li>
           <li className="MenuNavList__item">
