@@ -1,8 +1,8 @@
 import React, { Component } from "react";
 const gapi = window.gapi;
 
-var CLIENT_ID = "";
-var API_KEY = "";
+const CLIENT_ID = "";
+const API_KEY = "";
 var DISCOVERY_DOCS = [
   "https://sheets.googleapis.com/$discovery/rest?version=v4",
 ];
