@@ -24,20 +24,20 @@ const Bui = () => {
     ranges: ["Salidas Persistentes!B2:Z2", "Salidas Persistentes!B3:Z200"],
   });
 
-  const filterTableBaseUnicaIngestas = responseBaseUnicaIngestas.dataB.filter(
+  const filterTableBaseUnicaIngestas = responseBaseUnicaIngestas.dataB.filter (
     (row) => {
-      return `${row[20]}`.toLowerCase().includes(search.toLowerCase());
+      return `${row[20]}`.toLowerCase() === (search.toLowerCase());
     }
   );
 
   const filterTableSeguimientoIngestas =
-    responseSeguimientoIngestas.dataB.filter((row) => {
-      return `${row[0]}`.toLowerCase().includes(search.toLowerCase());
+    responseSeguimientoIngestas.dataB.filter ((row) => {
+      return `${row[0]}`.toLowerCase() === (search.toLowerCase());
     });
 
   const filterTableSeguimientoProcesos =
     responseSeguimientoProcesos.dataB.filter((row) => {
-      return `${row[0]}`.toLowerCase().includes(search.toLowerCase());
+      return `${row[0]}`.toLowerCase() === (search.toLowerCase());
     });
 
   function handleQuery(ev) {
