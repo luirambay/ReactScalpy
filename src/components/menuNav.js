@@ -50,7 +50,7 @@ const MenuNav = () => {
             <li className="MenuNavList__item">
               <NavLink className="MenuNavList__link" to="/pr">
                 <i className="fa fa-clipboard-list MenuNavList__link__icon"></i>
-                Solicitud de PR
+                Solicitud Revisión PR
               </NavLink>
             </li>
             <li className="MenuNavList__item">
@@ -102,7 +102,7 @@ const MenuNav = () => {
             <li className="MenuNavList__item">
               <NavLink className="MenuNavList__link" to="/tableros">
                 <i className="far fa-newspaper MenuNavList__link__icon"></i>
-                Tableros
+                Tableros Data Hub
               </NavLink>
             </li>
           </ul>
@@ -173,7 +173,7 @@ const MenuNav = () => {
           <li className="MenuNavList__item">
             <NavLink className="MenuNavList__link" to="/pr">
               <i className="fa fa-clipboard-list MenuNavList__link__icon"></i>
-              Solicitud de PR
+              Solicitud Revisión PR
             </NavLink>
           </li>
           <li className="MenuNavList__item">
@@ -235,7 +235,7 @@ const MenuNav = () => {
           <li className="MenuNavList__item">
             <NavLink className="MenuNavList__link" to="/tableros">
               <i className="far fa-newspaper MenuNavList__link__icon"></i>
-              Tableros
+              Tableros Data Hub
             </NavLink>
           </li>
         </ul>
