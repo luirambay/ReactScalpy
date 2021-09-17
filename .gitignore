@@ -6,3 +6,4 @@ dist
 .firebaserc
 firebase.json
 src/HOC/widthGetData
+package-lock.json

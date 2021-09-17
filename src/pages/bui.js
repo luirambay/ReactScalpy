@@ -26,18 +26,30 @@ const Bui = () => {
 
   const filterTableBaseUnicaIngestas = responseBaseUnicaIngestas.dataB.filter(
     (row) => {
-      return `${row[20]}`.toLowerCase().includes(search.toLowerCase());
+      if (search === "") {
+        return `${row[20]}`.toLowerCase().includes(search.toLowerCase());
+      } else {
+        return `${row[20]}`.toLowerCase() === search.toLowerCase();
+      }
     }
   );
 
   const filterTableSeguimientoIngestas =
     responseSeguimientoIngestas.dataB.filter((row) => {
-      return `${row[0]}`.toLowerCase().includes(search.toLowerCase());
+      if (search === "") {
+        return `${row[0]}`.toLowerCase().includes(search.toLowerCase());
+      } else {
+        return `${row[0]}`.toLowerCase() === search.toLowerCase();
+      }
     });
 
   const filterTableSeguimientoProcesos =
     responseSeguimientoProcesos.dataB.filter((row) => {
-      return `${row[0]}`.toLowerCase().includes(search.toLowerCase());
+      if (search === "") {
+        return `${row[0]}`.toLowerCase().includes(search.toLowerCase());
+      } else {
+        return `${row[0]}`.toLowerCase() === search.toLowerCase();
+      }
     });
 
   function handleQuery(ev) {
