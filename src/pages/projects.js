@@ -10,7 +10,7 @@ import preloader from "../../public/assets/loader.svg";
 const Projects = () => {
   const [response, loader, error] = useGetApi({
     spreadsheetId: "1hzl46RsuskuhWIemBdKGmtc_-mzPP9mlh9mT7-hEcZA",
-    ranges: ["ProyS Q3.21!E1:J1", "ProyS Q3.21!E2:J22"],
+    ranges: ["ProyS Q3.21!E1:K1", "ProyS Q3.21!E2:K22"],
   });
   const [query, setQuery] = useState("");
 
@@ -58,6 +58,7 @@ const Projects = () => {
                     <th className="TableDataHead__col">{el[2]}</th>
                     <th className="TableDataHead__col">{el[3]}</th>
                     <th className="TableDataHead__col">{el[5]}</th>
+                    <th className="TableDataHead__col">{el[6]}</th>
                   </tr>
                 ))}
               </thead>
@@ -68,6 +69,7 @@ const Projects = () => {
                     <td className="TableDataBody__col">{el[2]}</td>
                     <td className="TableDataBody__col">{el[3]}</td>
                     <td className="TableDataBody__col">{el[5]}</td>
+                    <td className="TableDataBody__col">{el[6]}</td>
                   </tr>
                 ))}
               </tbody>
