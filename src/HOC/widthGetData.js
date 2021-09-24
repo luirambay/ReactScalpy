@@ -3,6 +3,7 @@ const gapi = window.gapi;
 
 const CLIENT_ID = "";
 const API_KEY = "";
+
 var DISCOVERY_DOCS = [
   "https://sheets.googleapis.com/$discovery/rest?version=v4",
 ];
