@@ -1,10 +1,11 @@
 import { useState, useEffect } from "react";
 
-const CLIENT_ID =
-  "";
+const CLIENT_ID = "";
 const API_KEY = "";
-const DISCOVERY_DOCS = [""];
-const SCOPES = "";
+const DISCOVERY_DOCS = [
+  "https://sheets.googleapis.com/$discovery/rest?version=v4",
+];
+const SCOPES = "https://www.googleapis.com/auth/spreadsheets.readonly";
 
 export default function UsetGetApi() {
   const [btnActive, setBtnActive] = useState(true);
