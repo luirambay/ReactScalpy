@@ -1,8 +1,8 @@
 import { useState, useEffect } from "react";
 
 const CLIENT_ID =
-  "559370445327-bpdnau021qpantmcqj2hhrurtjcs1sfl.apps.googleusercontent.com";
-const API_KEY = "AIzaSyCpPXOxzBuzIwxQ8z7AS1lbC4TmP3wZSgw";
+  "";
+const API_KEY = "";
 const DISCOVERY_DOCS = [""];
 const SCOPES = "";
 
