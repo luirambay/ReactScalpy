@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { BrowserRouter, Switch, Route } from "react-router-dom";
 
 import Layout from "./layout";
@@ -32,8 +32,13 @@ import TableroMallas from "../pages/tableroMallas";
 // import GeneratorC204 from "../pages/generator";
 import RulesCSV from "../pages/rules";
 import PageError from "./pageError";
+import ReactGA from "react-ga";
 
 const App = () => {
+  useEffect(() => {
+    ReactGA.initialize("G-VEXLP8X7CB");
+    ReactGA.pageview(window.location.pathname + window.location.search);
+  }, []);
   return (
     <BrowserRouter basename="/react-spa-bbva/">
       <Layout>
