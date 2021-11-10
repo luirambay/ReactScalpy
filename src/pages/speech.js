@@ -24,7 +24,11 @@ const Speech = () => {
   });
 
   const filterByQuery = filterByX.filter((row) => {
-    return `${row[3]}`.toLowerCase().includes(query.toLowerCase());
+    return `${row[0]}`.toLowerCase().includes(query.toLowerCase()) || 
+    `${row[1]}`.toLowerCase().includes(query.toLowerCase()) ||
+    `${row[2]}`.toLowerCase().includes(query.toLowerCase()) ||
+    `${row[3]}`.toLowerCase().includes(query.toLowerCase()) ||
+    `${row[4]}`.toLowerCase().includes(query.toLowerCase())
   });
 
   if (error) {
