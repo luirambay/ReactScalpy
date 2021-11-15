@@ -2,8 +2,8 @@ import React, { Component } from "react";
 const gapi = window.gapi;
 
 const CLIENT_ID =
-  "559370445327-bpdnau021qpantmcqj2hhrurtjcs1sfl.apps.googleusercontent.com";
-const API_KEY = "AIzaSyCpPXOxzBuzIwxQ8z7AS1lbC4TmP3wZSgw";
+  "";
+const API_KEY = "";
 var DISCOVERY_DOCS = [
   "https://sheets.googleapis.com/$discovery/rest?version=v4",
 ];
