@@ -116,10 +116,14 @@ const MenuNav = () => {
               </NavLink>
             </li>
             <li className="MenuNavList__item">
-              <NavLink className="MenuNavList__link" to="/validator">
+              <a
+                target="blank"
+                className="MenuNavList__link"
+                href="https://scalpy.azurewebsites.net"
+              >
                 <i className="fa fa-clipboard-list MenuNavList__link__icon"></i>
                 Validador Ingestas
-              </NavLink>
+              </a>
             </li>
             <li className="MenuNavList__item">
               <NavLink className="MenuNavList__link" to="/jira">
@@ -259,10 +263,14 @@ const MenuNav = () => {
             </NavLink>
           </li>
           <li className="MenuNavList__item">
-            <NavLink className="MenuNavList__link" to="/validator">
+            <a
+              target="blank"
+              className="MenuNavList__link"
+              href="https://scalpy.azurewebsites.net"
+            >
               <i className="fa fa-clipboard-list MenuNavList__link__icon"></i>
               Validador Ingestas
-            </NavLink>
+            </a>
           </li>
           <li className="MenuNavList__item">
             <NavLink className="MenuNavList__link" to="/jira">
