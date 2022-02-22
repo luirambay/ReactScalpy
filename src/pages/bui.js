@@ -11,17 +11,17 @@ const Bui = () => {
 
   const [responseBaseUnicaIngestas, loader, error] = useGetApi({
     spreadsheetId: "1UNn1b0KZfmZXxFnPkTChv-thwI2mr9AtrtdIuztySAo",
-    ranges: ["Base única de Ingesta!A3:AQ3", "Base única de Ingesta!A4:AQ3400"],
+    ranges: ["Base única de Ingesta!A3:AQ3", "Base única de Ingesta!A4:AQ3700"],
   });
 
   const [responseSeguimientoIngestas] = useGetApi({
     spreadsheetId: "12ywigRiIbAz3e9zxs5ObnbyUELCmfG0qSkx5zRuBFOs",
-    ranges: ["Concentradora Estatus!B2:AE2", "Concentradora Estatus!B3:AE890"],
+    ranges: ["Concentradora Estatus!B2:AE2", "Concentradora Estatus!B3:AE971"],
   });
 
   const [responseSeguimientoProcesos] = useGetApi({
     spreadsheetId: "1Bl2bh6xlIAc76utfyakNnpO2z6Pb6HQtwIemDifsuJU",
-    ranges: ["Salidas Persistentes!B2:Z2", "Salidas Persistentes!B3:Z200"],
+    ranges: ["Salidas Persistentes!B2:Z2", "Salidas Persistentes!B3:Z309"],
   });
 
   const filterTableBaseUnicaIngestas = responseBaseUnicaIngestas.dataB.filter(
