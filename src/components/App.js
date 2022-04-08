@@ -29,6 +29,7 @@ import VerifiedJIRA from "../pages/jira";
 import SeguimientoDQA from "../pages/seguimientoDQA";
 import TableroHammurabi from "../pages/tableroHammurabi";
 import TableroMallas from "../pages/tableroMallas";
+import Checklist from "../pages/checklist";
 // import GeneratorC204 from "../pages/generator";
 import RulesCSV from "../pages/rules";
 import PageError from "./pageError";
@@ -86,6 +87,7 @@ const App = () => {
           <Route exact path="/tableros" component={Tableros} />
           <Route exact path="/validator" component={VerifiedIngesta} />
           <Route exact path="/jira" component={VerifiedJIRA} />
+          <Route exact path="/checklist" component={Checklist} />
           {/* <Route exact path="/generator" component={GeneratorC204} /> */}
           <Route exact path="/rules" component={RulesCSV} />
           <Route component={PageError} />

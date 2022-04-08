@@ -54,6 +54,12 @@ const MenuNav = () => {
               </NavLink>
             </li>
             <li className="MenuNavList__item">
+              <NavLink className="MenuNavList__link" to="/checklist">
+                <i className="fa fa-clipboard-list MenuNavList__link__icon"></i>
+                Checklist
+              </NavLink>
+            </li>
+            <li className="MenuNavList__item">
               <NavLink className="MenuNavList__link" to="/graphics/pr">
                 <i className="fa fa-chart-line MenuNavList__link__icon"></i>
                 Seguimiento Solicitudes
