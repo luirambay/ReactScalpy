@@ -11,7 +11,7 @@ const Bui = () => {
 
   const [responseBaseUnicaIngestas, loader, error] = useGetApi({
     spreadsheetId: "1UNn1b0KZfmZXxFnPkTChv-thwI2mr9AtrtdIuztySAo",
-    ranges: ["Base única de Ingesta!A3:AQ3", "Base única de Ingesta!A4:AQ3700"],
+    ranges: ["Base única de Ingesta!A3:AQ3", "Base única de Ingesta!A4:AQ4245"],
   });
 
   const [responseSeguimientoIngestas] = useGetApi({
