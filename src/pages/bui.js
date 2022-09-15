@@ -11,12 +11,12 @@ const Bui = () => {
 
   const [responseBaseUnicaIngestas, loader, error] = useGetApi({
     spreadsheetId: "1UNn1b0KZfmZXxFnPkTChv-thwI2mr9AtrtdIuztySAo",
-    ranges: ["Base única de Ingesta!A3:AQ3", "Base única de Ingesta!A4:AQ4245"],
+    ranges: ["Base única de Ingesta!A3:AQ3", "Base única de Ingesta!A4:AQ4450"],
   });
 
   const [responseSeguimientoIngestas] = useGetApi({
     spreadsheetId: "12ywigRiIbAz3e9zxs5ObnbyUELCmfG0qSkx5zRuBFOs",
-    ranges: ["Concentradora Estatus!B2:AE2", "Concentradora Estatus!B3:AE971"],
+    ranges: ["Concentradora Estatus!B2:AE2", "Concentradora Estatus!B3:AE1214"],
   });
 
   const [responseSeguimientoProcesos] = useGetApi({
